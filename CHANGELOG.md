@@ -9,6 +9,8 @@ exception: while the project is below `1.0.0`, breaking changes bump the
 
 ## [Unreleased]
 
+- Added end-to-end integration test for `watchtower_counter_evidence` and its bounty split
+
 - **`treasury` (issues #645, #647): clamp `claimable` at zero and pin the vesting curve.**
   `VestingSchedule::claimable` now floors at zero when the recorded `claimed`
   exceeds what has vested, as its documentation already promised; the new
